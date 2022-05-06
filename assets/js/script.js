@@ -14,3 +14,10 @@ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggl
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+/*Evento Enviar Comentario Formulario*/
+/* ECMAScrip 6*/
+let enviarCorreo = document.getElementById("enviarMensaje");
+enviarCorreo.addEventListener("click",() => {
+    alert("El mensaje fue enviado correctamente...");
+});
