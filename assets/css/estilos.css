@@ -28,3 +28,42 @@ Body{
     font-size: 1.2rem;
     color: rgba(255, 255, 255, 0.8);
 }
+
+/*Presentación*/
+.iconpre{
+    background-color: #0dcaf0;
+}
+.textpre{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/*Destacados*/
+.card-img-top{
+    height: 12rem;
+}
+
+/*Contacto*/
+.textform{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+/*Footer*/
+.backfoot{
+    background-color: #0dcaf0;
+}
+.titlefoot{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+/* propiedades de los iconoslinks*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}

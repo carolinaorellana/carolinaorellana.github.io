@@ -27,36 +27,251 @@
     <link rel="stylesheet" href="assets/css/estilos.css">
 </head>
 <body>
-    <!--Navbar--> <!--Falta el smoothscroll, hacer al final cuando las secciones esten listas-->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand titlesect" href="#">
-                <img class="logo-nav" src="assets/img/viajes.svg" alt="logoviajeschile" width="100%">
-                Viajes Chile
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-                <span class="navbar-toggler-icon"></span>
+
+<!--Navbar-->
+    <!--Falta el smoothscroll, hacer al final cuando las secciones esten listas-->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand titlesect" href="#">
+                    <img class="logo-nav" src="assets/img/viajes.svg" alt="logoviajeschile" width="100%">
+                    Viajes Chile
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link textnav" aria-current="page" href="#Inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textnav" aria-current="page" href="#Quienes-Somos">Quienes Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textnav" aria-current="page" href="#Destacados">Destacados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link textnav" aria-current="page" href="#Contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Carousel--><!--listo -->
+    <section id="Inicio" class="mb-4">
+        <!--Navbar bootstrap v5.1-->
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="llamas">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="isladepascua">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="pinguinos">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link textnav" aria-current="page" href="#Inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link textnav" aria-current="page" href="#Quienes-Somos">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link textnav" aria-current="page" href="#Destacados">Destacados</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link textnav" aria-current="page" href="#Contacto">Contacto</a>
-                    </li>
-                </ul>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    
+    <!--Sección presentación--> <!--listo-->
+    <Section id="Quienes-Somos" class="d-none d-md-block">
+        <div class="container mt-5 pt-5">
+            <h2 class="text-center titlesect pb-3">¿Quienes Somos?</h2>
+            <hr class="bg-info ">
+            <div clas="container">
+                <div class="row py-4">
+                    <!--Sec1-->
+                    <div class="col-4">
+                        <!--icono con fondo-->
+                        <div class="iconpre text-center p-2 mb-3">
+                            <i class="fas fa-plane fa-2x text-white text-center"></i>
+                        </div>
+                        <p class="textpre">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, libero eu mattis luctus, erat
+                            mi pharetra velit,
+                            ut vehicula est nunc ut erat. Sed erat lorem, euismod eu dui et, imperdiet venenatis purus. Nullam
+                            nisi mauris, feugiat
+                            vel auctor ac, dapibus quis orci. Nam non ex placerat, suscipit neque in, pulvinar felis. Aenean
+                            imperdiet sem eu auctor
+                            feugiat. Duis auctor rutrum augue a suscipit. Pellentesque a lacus ac ligula consectetur consectetur
+                            id in leo. Interdum
+                            et malesuada fames ac ante ipsum primis in faucibus. Suspendisse purus arcu, dignissim non ipsum
+                            vel, ultrices hendrerit
+                            nunc.
+                        </p>
+                    </div>
+                    <!--Sec2-->
+                    <div class="col-4">
+                        <p class="textpre mb-3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, libero eu mattis luctus, erat
+                            mi pharetra velit,
+                            ut vehicula est nunc ut erat. Sed erat lorem, euismod eu dui et, imperdiet venenatis purus. Nullam
+                            nisi mauris, feugiat
+                            vel auctor ac, dapibus quis orci. Nam non ex placerat, suscipit neque in, pulvinar felis. Aenean
+                            imperdiet sem eu auctor
+                            feugiat. Duis auctor rutrum augue a suscipit. Pellentesque a lacus ac ligula consectetur consectetur
+                            id in leo. Interdum
+                            et malesuada fames ac ante ipsum primis in faucibus. Suspendisse purus arcu, dignissim non ipsum
+                            vel, ultrices hendrerit
+                            nunc.
+                        </p>
+                        <!--icono con fondo-->
+                        <div class="iconpre text-center p-2">
+                            <i class="fas fa-mountain fa-2x text-white text-center"></i>
+                            <i class="fas fa-mountain fa-2x text-white text-center"></i>
+                        </div>
+        
+                    </div>
+                    <!--Sec3-->
+                    <div class="col-4 ">
+                        <!--icono con fondo-->
+                        <div class="iconpre text-center p-2 mb-3">
+                            <i class="fas fa-route fa-2x text-white"></i>
+                        </div>
+                        <p class="textpre">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta, libero eu mattis luctus, erat
+                            mi pharetra velit,
+                            ut vehicula est nunc ut erat. Sed erat lorem, euismod eu dui et, imperdiet venenatis purus. Nullam
+                            nisi mauris, feugiat
+                            vel auctor ac, dapibus quis orci. Nam non ex placerat, suscipit neque in, pulvinar felis. Aenean
+                            imperdiet sem eu auctor
+                            feugiat. Duis auctor rutrum augue a suscipit. Pellentesque a lacus ac ligula consectetur consectetur
+                            id in leo. Interdum
+                            et malesuada fames ac ante ipsum primis in faucibus. Suspendisse purus arcu, dignissim non ipsum
+                            vel, ultrices hendrerit
+                            nunc.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-    
+    </Section>
+
+    <!--Sección destacados--> <!--listo-->
+    <section id="Destacados">
+        <div class="container my-5 py-5">
+            <h2 class="text-center titlesect pb-3">Destacados</h2>
+            <hr class="bg-info">
+            <div class="container">
+                <div class="row py-4">
+                    <!--Cards bootstrap v5.1-->
+                    <!--Card 1-->
+                    <div class="col-12 col-md-3 mb-4">
+                        <div class="card bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Visita este hermoso lugar!">
+                            <img src="assets/img/card1.jpg" class="card-img-top" alt="paisaje1">
+                            <div class="card-body">
+                                <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+                                    euismod
+                                    tempor incididunt ut
+                                    labore et dolore manga aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 2-->
+                    <div class="col-12 col-md-3 mb-4">
+                        <div class="card bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Visita este hermoso lugar!">
+                            <img src="assets/img/card2.jpg" class="card-img-top" alt="paisaje2">
+                            <div class="card-body">
+                                <h5 class="card-title">consectetur adipisicing elit</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+                                    euismod
+                                    tempor incididunt ut
+                                    labore et dolore manga aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 3-->
+                    <div class="col-12 col-md-3 mb-4">
+                        <div class="card bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Visita este hermoso lugar!">
+                            <img src="assets/img/card3.jpg" class="card-img-top" alt="paisaje3">
+                            <div class="card-body">
+                                <h5 class="card-title">consectetur adipisicing elit</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+                                    euismod
+                                    tempor incididunt ut
+                                    labore et dolore manga aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card 4-->
+                    <div class="col-12 col-md-3 mb-4">
+                        <div class="card bg-info" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Visita este hermoso lugar!">
+                            <img src="assets/img/card4.jpg" class="card-img-top" alt="paisaje4">
+                            <div class="card-body">
+                                <h5 class="card-title">consectetur adipisicing elit</h5>
+                                <p class="card-text"> Lorem ipsum dolor sit, amet consectetur adipisicing elit, sed do
+                                    euismod
+                                    tempor incididunt ut
+                                    labore et dolore manga aliqua.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Sección formulario de contacto--><!--Agregar typeform-->
+    <section id="#Contacto">
+        <div class="container my-5">
+            <h2 class="text-center titlesect pb-3">Contacto</h2>
+            <hr class="bg-info">
+            <div class="container py-4">
+                <!--Form bootstrap v5.1-->
+                <form>
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label textform">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01">
+                    </div>
+                    <div class="mb-3">
+                        <label for="validationCustom01" class="form-label textform">Asunto</label>
+                        <input type="text" class="form-control" id="validationCustom01">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label textform">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-info text-white">Enviar</button> 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="container-fluid backfoot p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <h3 class="ps-5 ms-5 titlefoot">Viajes Chile</h3>
+                    </div>
+                    <div class="col-12 col-md-6 text-end"> <!--Modificar links en css luego de dar el id-->
+                        <a href="https://github.com/" target="_blank"> <i class="fab fa-github-square fa-2x me-4"> </i></a>
+                        <a href="http://www.linkedin.com/" target="_blank"> <i class="fab fa-linkedin fa-2x me-4"> </i></a>
+                        <a href="https://twitter.com/"> <i class="fab fa-twitter-square fa-2x me-4"> </i></a>
+                        <a href="https://www.facebook.com/"> <i class="fab fa-facebook-square fa-2x me-5 pe-5"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <!--Link Jquery--> <!--ver si se usa este o java nativo-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
         crossorigin="anonymous"></script>
