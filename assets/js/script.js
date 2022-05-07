@@ -1,4 +1,5 @@
-//Navbar background
+//Navbar con cambio de color en background 
+/*Bootstrap 5.1 y Jquery*/
 var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function(){
@@ -9,7 +10,8 @@ window.addEventListener('scroll', function(){
     }
 })
 
-//tooltip (en cards)
+//tooltip (en cards) 
+/*Bootstrap 5.1*/
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
