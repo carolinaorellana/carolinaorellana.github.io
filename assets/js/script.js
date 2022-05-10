@@ -1,5 +1,6 @@
 //Navbar con cambio de color en background 
-/*Bootstrap 5.1 y Jquery*/
+/*Bootstrap 5.1 y javascript */
+
 var nav = document.querySelector('nav');
 
 window.addEventListener('scroll', function(){
@@ -10,16 +11,9 @@ window.addEventListener('scroll', function(){
     }
 })
 
-//tooltip (en cards) 
+//tooltip (en cards e iconos de redes sociales) 
 /*Bootstrap 5.1*/
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
 })
-
-/*Evento Enviar Comentario Formulario*/
-/* ECMAScrip 6*/
-let enviarCorreo = document.getElementById("enviarMensaje");
-enviarCorreo.addEventListener("click",() => {
-    alert("El mensaje fue enviado correctamente...");
-});
